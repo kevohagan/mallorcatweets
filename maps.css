@@ -1,0 +1,10 @@
+/* CSS declarations go here */
+* {
+	margin: 0;
+	padding: 0;
+}
+#map-canvas {
+	height: 500px;
+	width: 1000px;
+	border: 1px solid red;
+}
