@@ -4,7 +4,11 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
 insecure
 preserve-inputs
 googlemaps
+streams
+coffeescript
+twit
+semantic-ui
+moment

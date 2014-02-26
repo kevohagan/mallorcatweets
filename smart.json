@@ -1,5 +1,9 @@
 {
   "packages": {
-    "googlemaps": {}
+    "googlemaps": {},
+    "streams": {},
+    "twit": {},
+    "semantic-ui": {},
+    "moment": {}
   }
 }

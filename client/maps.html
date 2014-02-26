@@ -1,0 +1,50 @@
+<head>
+  <title>Google Maps</title>
+</head>
+
+<body>
+  {{>map}}
+  {{>tweetList}}
+</body>
+
+<template name="map">
+<div class="FlexEmbed FlexEmbed--3by1" id="map-canvas"></div>
+<h1 class="ui center aligned secondary black header">
+  Mallorca Tweets
+</h1>
+</template>
+
+
+<template name="tweetList">
+<div class="ui grid two column stackable ">
+  <div class="column four wide">
+    <div class="ui segment stacked">
+      <h2 class="ui header secondary black center aligned">Meteor.js Love</h2>
+      <div class="content">
+        <p>Esta app esta hecha con Meteor.js + Twitter API + Google Maps</p>
+        <p>Utiliza la api de twitter para sacar un stream de los tweets en Mallorca, utilizamos Meteor.js para renderizarlos en Google Maps.</p>
+        <p>Alguien a dicho MOLA?? :P</p>
+        <p>Source code is here boys : <a href="http://gith"></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column twelve wide">
+    <div class="ui animated selection huge list">
+    {{#each tweets}}
+      <div class="item">
+       <img class="ui avatar image" src="{{img}}">
+          <a href="http://twitter.com/{{user}}" target="_blank">
+          <div class="ui red horizontal label">{{user}}</div>
+          <span class="sub header ui black secondary">{{text}}</span>
+          </a>
+      </div>
+    {{/each}}
+    </div>
+  </div>
+</div>
+
+</template>
+
+
+
+

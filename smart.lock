@@ -2,13 +2,47 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "googlemaps": {}
+      "googlemaps": {
+        "version": "0.0.2"
+      },
+      "streams": {
+        "version": "0.1.17"
+      },
+      "twit": {
+        "version": "0.2.0"
+      },
+      "semantic-ui": {
+        "version": "0.13.0"
+      },
+      "moment": {
+        "version": "2.5.1"
+      }
     },
     "packages": {
       "googlemaps": {
         "git": "https://github.com/drewjw81/meteor-googlemaps.git",
         "tag": "v0.0.2",
         "commit": "da8785c82cfd7de0111f898ef10728e7ed24e361"
+      },
+      "streams": {
+        "git": "https://github.com/arunoda/meteor-streams.git",
+        "tag": "v0.1.17",
+        "commit": "9fcbbc9b7bf542827babc92089c19e730892a22f"
+      },
+      "twit": {
+        "git": "https://github.com/subhog/meteor-twit.git",
+        "tag": "v0.2.0",
+        "commit": "3eb473f9efef8c77ae6a8eb6715fbdf93c4d87c0"
+      },
+      "semantic-ui": {
+        "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
+        "tag": "v0.13.0",
+        "commit": "e52080af47b590b6204d0824ece47e0f1a914f76"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.5.1",
+        "commit": "8c9bc5d3fc96705057737cb9743d555417f6e551"
       }
     }
   }
