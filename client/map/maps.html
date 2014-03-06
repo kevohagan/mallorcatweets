@@ -7,15 +7,22 @@
   {{>tweetList}}
 </body>
 
+
+
+<!-- The map template -->
+
 <template name="map">
+
 <div class="FlexEmbed FlexEmbed--3by1" id="map-canvas"></div>
-<h1 class="ui center aligned secondary black header">
-  Mallorca Tweets
-</h1>
+<h1 class="ui center aligned secondary black header"> Mallorca Tweets </h1>
+
 </template>
 
 
+<!-- The tweet list template  -->
+
 <template name="tweetList">
+
 <div class="ui grid two column stackable ">
   <div class="column four wide">
     <div class="ui segment stacked">
@@ -24,12 +31,15 @@
         <p>Esta app esta hecha con Meteor.js + Twitter API + Google Maps</p>
         <p>Utiliza la api de twitter para sacar un stream de los tweets en Mallorca, utilizamos Meteor.js para renderizarlos en Google Maps.</p>
         <p>Alguien a dicho MOLA?? :P</p>
-        <p>Source code is here boys : <a href="http://gith"></a></p>
+        <p>Source code is here boys : <a href="https://github.com/kevohagan/mallorcatweets">https://github.com/kevohagan/mallorcatweets</a></p>
       </div>
     </div>
   </div>
   <div class="column twelve wide">
     <div class="ui animated selection huge list">
+
+    <!-- Meteor helper recursing each tweet  -->
+
     {{#each tweets}}
       <div class="item">
        <img class="ui avatar image" src="{{img}}">
@@ -39,6 +49,7 @@
           </a>
       </div>
     {{/each}}
+
     </div>
   </div>
 </div>
