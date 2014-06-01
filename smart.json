@@ -4,6 +4,8 @@
     "streams": {},
     "twit": {},
     "semantic-ui": {},
-    "moment": {}
+    "moment": {},
+    "template-animation-helper": {},
+    "view-manager": {}
   }
 }

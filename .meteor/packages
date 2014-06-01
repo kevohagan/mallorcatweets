@@ -5,10 +5,11 @@
 
 standard-app-packages
 insecure
-preserve-inputs
 googlemaps
 streams
 coffeescript
 twit
 semantic-ui
 moment
+view-manager
+template-animation-helper

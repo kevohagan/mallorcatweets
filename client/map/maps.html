@@ -36,18 +36,12 @@
     </div>
   </div>
   <div class="column twelve wide">
-    <div class="ui animated selection huge list">
+    <div id="tweetList" class="ui animated selection huge list cards">
 
     <!-- Meteor helper recursing each tweet  -->
 
     {{#each tweets}}
-      <div class="item">
-       <img class="ui avatar image" src="{{img}}">
-          <a href="http://twitter.com/{{user}}" target="_blank">
-          <div class="ui red horizontal label">{{user}}</div>
-          <span class="sub header ui black secondary">{{text}}</span>
-          </a>
-      </div>
+      {{>AnimateTemplate template="tweet" context=this}}
     {{/each}}
 
     </div>
@@ -58,4 +52,12 @@
 
 
 
-
+<template name="tweet">
+      <div class="ui item hidden transition">
+       <img class="ui avatar image" src="{{img}}">
+          <a href="http://twitter.com/{{user}}" target="_blank">
+          <div class="ui red horizontal label">{{user}}</div>
+          <span class="sub header ui black secondary">{{text}}</span>
+          </a>
+      </div>
+</template>

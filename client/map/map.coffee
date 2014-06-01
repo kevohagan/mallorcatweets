@@ -69,7 +69,7 @@ Tweets = new Meteor.Collection(null)
 #listen to the stream and add to the collection,
 #same listening as above for the map but inserting in the client side Tweets collection
 locStream.on "update", (message) ->
-   a = Tweets.insert
+  Tweets.insert
     user: message.user
     lat: message.lat
     lon: message.lon
@@ -77,7 +77,6 @@ locStream.on "update", (message) ->
     text: message.text
     img: message.img
     img_url: message.img_url
-  console.log a
   return
 
 
@@ -88,3 +87,11 @@ Template.tweetList.helpers
     Tweets.find({},{sort : {created_at: -1}})
   moment: () ->
     moment(@time)
+
+
+Template.tweetList.rendered = () ->
+  stroll.bind( '#tweetList', { live: true } );
+
+
+Template.tweet.created = () ->
+  $('.transition').transition "fadeUp"
