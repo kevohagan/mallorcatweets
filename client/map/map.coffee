@@ -77,6 +77,7 @@ locStream.on "update", (message) ->
     text: message.text
     img: message.img
     img_url: message.img_url
+    created_at: new Date()
   return
 
 

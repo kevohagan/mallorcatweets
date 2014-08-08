@@ -6,6 +6,7 @@
     "semantic-ui": {},
     "moment": {},
     "template-animation-helper": {},
-    "view-manager": {}
+    "view-manager": {},
+    "animation-helper-velocity": {}
   }
 }

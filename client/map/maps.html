@@ -41,7 +41,16 @@
     <!-- Meteor helper recursing each tweet  -->
 
     {{#each tweets}}
-      {{>AnimateTemplate template="tweet" context=this}}
+      <!-- {{>AnimateTemplate template="tweet" context=this}} -->
+      {{#AnimateWithVelocity}}
+              <div class="ui item" data-animate data-duration="500" data-properties="translateY, opacity" data-from-values="-25px, 0" data-to-values="0px, 1" data-easing-in="easeIn" data-easing-out="easeOut">
+               <img class="ui avatar image" src="{{img}}">
+                  <a href="http://twitter.com/{{user}}" target="_blank">
+                  <div class="ui red horizontal label">{{user}}</div>
+                  <span class="sub header ui black secondary">{{text}}</span>
+                  </a>
+              </div>
+      {{/AnimateWithVelocity}}
     {{/each}}
 
     </div>

@@ -2,27 +2,14 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "googlemaps": {
-        "version": "0.0.2"
-      },
-      "streams": {
-        "version": "0.1.17"
-      },
-      "twit": {
-        "version": "0.2.0"
-      },
-      "semantic-ui": {
-        "version": "0.17.0"
-      },
-      "moment": {
-        "version": "2.6.0"
-      },
-      "template-animation-helper": {
-        "version": "1.0.3"
-      },
-      "view-manager": {
-        "version": "0.1.5"
-      }
+      "googlemaps": {},
+      "streams": {},
+      "twit": {},
+      "semantic-ui": {},
+      "moment": {},
+      "template-animation-helper": {},
+      "view-manager": {},
+      "animation-helper-velocity": {}
     },
     "packages": {
       "googlemaps": {
@@ -42,8 +29,8 @@
       },
       "semantic-ui": {
         "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
-        "tag": "v0.17.0",
-        "commit": "820b4a05267733aa8124ba6ebc5b88eaf93361c4"
+        "tag": "v0.19.0",
+        "commit": "23ddf7b58db125cc33d0d95d58fcac940f262481"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
@@ -52,13 +39,28 @@
       },
       "template-animation-helper": {
         "git": "https://github.com/frozeman/meteor-template-animation-helper.git",
-        "tag": "v1.0.3",
-        "commit": "f2b76f593a89869b7c64c77ec3717e46e8ed0db0"
+        "tag": "v1.1.5",
+        "commit": "bab74148777bc2f086118f18fffb4264930495c5"
       },
       "view-manager": {
         "git": "https://github.com/frozeman/meteor-view-manager.git",
-        "tag": "v0.1.5",
-        "commit": "2631b5adf4c82f58158a92bbb4437b6e4e8a607b"
+        "tag": "v0.1.6",
+        "commit": "e689883ce22917c5254c25a661588a549c1d933c"
+      },
+      "animation-helper-velocity": {
+        "git": "https://github.com/frozeman/meteor-animation-helper-velocity.git",
+        "tag": "v0.0.7",
+        "commit": "7ca3391de481c9af1d9e3bc3e0d819bc767b0946"
+      },
+      "velocityjs": {
+        "git": "https://github.com/Sewdn/meteor-velocityjs.git",
+        "tag": "v0.8.0",
+        "commit": "5e96099e2cf8f99dbc7ed61225e96b0ba833ff08"
+      },
+      "underscore-string-latest": {
+        "git": "https://github.com/TimHeckel/meteor-underscore-string.git",
+        "tag": "v2.3.3",
+        "commit": "4a5d70eee48fbd90a6e6fc78747250d704a0b3bb"
       }
     }
   }
